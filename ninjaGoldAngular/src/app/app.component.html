@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+    <div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <h5> You currently have {{ goldamount }} gold</h5>
+  
+  <button class="btn btn-info" (click)="goLocation('farm')"> Farm </button>
+  <button class="btn btn-info" (click)="goLocation('cave')"> Cave </button>
+  <button class="btn btn-info" (click)="goLocation('house')"> House </button>
+  <button class="btn btn-info" (click)="goLocation('casino')"> Casino </button>
+
+  <div>
+  	<p *ngFor="let log of logs">
+  	{{log}}
+  </p>
+
+  </div>
